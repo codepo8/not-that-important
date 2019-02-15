@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Derpify</title>
+    <link rel="stylesheet" href="derpify-app.css">
+</head>
+<body>
+    <h1>Derpify</h1>
+<form>
+
+    <input id="texttotransform" autocomplete="no" placeholder="Enter text, receive derp...">
+    <div id="transformed-text"></div>
+    <script src="derpify-es6.js"></script>
+    <script>
+        const from = document.querySelector('#texttotransform');
+        const output = document.querySelector('#transformed-text');
+        from.addEventListener('keyup',(e) => {
+            from.value = derpify(from.value);
+            e.preventDefault();
+          });
+
+    </script>
+</form>    
+</body>
+</html>
