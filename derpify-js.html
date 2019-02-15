@@ -10,11 +10,14 @@
 <h1>Derpify</h1>
 <form> 
     <input id="texttotransform" autocomplete="off" placeholder="Enter text, receive derp...">
+    <div id="derp"></div>
     <script src="derpify-es6.js"></script>
     <script>
         const from = document.querySelector('#texttotransform');
-        from.addEventListener('keyup',(e) => {
-            from.value = derpify(from.value);
+        const derp = document.querySelector('#derp');
+        from.addEventListener('input',(e) => {
+            derp.innerText = derpify(from.value);
+            derp.style.transform = 'rotate('+ ((Math.random()*10) -5) +'deg)';
             e.preventDefault();
         });
     </script>

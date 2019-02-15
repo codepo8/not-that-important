@@ -16,7 +16,8 @@ input {
     padding: 5px;
     border: 2px dashed slateblue;
 }
-#transformed-text {
+#derp {
+    transition: 100ms;
     font-size: 5vw;
     margin: 1em;
 }

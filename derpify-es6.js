@@ -1,9 +1,5 @@
-'use strict';
-
-function derpify(str) {
+function derpify(str, rand = 0.3) {
 	return str.toLowerCase().split('').map(
-		c => (Math.random() < 0.3) ? c : c.toUpperCase()
+		c => (Math.random() < rand) ? c : c.toUpperCase()
 	).join('');
 };
-
-module.exports = derpify;
