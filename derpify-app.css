@@ -20,4 +20,5 @@ input {
     transition: 100ms;
     font-size: 5vw;
     margin: 1em;
+    width: 90%;
 }

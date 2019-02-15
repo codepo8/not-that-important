@@ -20,6 +20,7 @@
             derp.style.transform = 'rotate('+ ((Math.random()*10) -5) +'deg)';
             e.preventDefault();
         });
+        document.querySelector('form').addEventListener('submit', e => e.preventDefault());
     </script>
 </form>    
 </body>
